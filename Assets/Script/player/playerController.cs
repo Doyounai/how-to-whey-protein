@@ -44,6 +44,7 @@ public class playerController : MonoBehaviour
     [Header("Swing Input")]
     public float minSwing = -0.1f;
     public float maxSwing = 0.1f;
+    public bool isPc = false;
 
     [Header("Swing")]
     public float swingForce = 10f;
@@ -96,9 +97,9 @@ public class playerController : MonoBehaviour
     }
 
     #region swing function
-    swingStage getCurrentSwing()
+    swingStage getCurrentSwing(float accX)
     {
-        float accX = Input.acceleration.x;
+        //float accX = Input.acceleration.x;
         if (accX <= minSwing)
             return swingStage.left;
         else if (accX >= maxSwing)
@@ -109,6 +110,16 @@ public class playerController : MonoBehaviour
 
     float getSwingForce()
     {
+        float pcForce = 5;
+
+        if (isPc)
+            if (Input.GetKey(KeyCode.LeftArrow))
+                return -1 * pcForce;
+            else if (Input.GetKey(KeyCode.RightArrow))
+                return 1 * pcForce;
+            else
+                return 0;
+
         return (Input.acceleration.x * 10);
     }
     public void onPlayerHitGround()
@@ -116,28 +127,32 @@ public class playerController : MonoBehaviour
         if (!isSwing)
             return;
 
-        if (transform.position.x < spoonPivot.position.x && getCurrentSwing() == swingStage.left)
-        {
-            target = spoonRb;
-            rotateOriginTransform = transform;
-            isSwing = false;
-        }
-        if (transform.position.x > spoonPivot.position.x && getCurrentSwing() == swingStage.right)
-        {
-            target = spoonRb;
-            rotateOriginTransform = transform;
-            isSwing = false;
-        }
+        target = spoonRb;
+        rotateOriginTransform = transform;
+        isSwing = false;
+
+        //if (transform.position.x < spoonPivot.position.x && getCurrentSwing(getSwingForce()) == swingStage.left)
+        //{
+        //    target = spoonRb;
+        //    rotateOriginTransform = transform;
+        //    isSwing = false;
+        //}
+        //if (transform.position.x > spoonPivot.position.x && getCurrentSwing(getSwingForce()) == swingStage.right)
+        //{
+        //    target = spoonRb;
+        //    rotateOriginTransform = transform;
+        //    isSwing = false;
+        //}
     }
     public void onSpoonHitGround()
     {
-        if(spoonPivot.position.x < transform.position.x && getCurrentSwing() == swingStage.left)
+        if(spoonPivot.position.x < transform.position.x && getCurrentSwing(getSwingForce()) == swingStage.left)
         {
             target = playerRb;
             rotateOriginTransform = spoonPivot;
             isSwing = true;
         }
-        if(spoonPivot.position.x > transform.position.x && getCurrentSwing() == swingStage.right)
+        if(spoonPivot.position.x > transform.position.x && getCurrentSwing(getSwingForce()) == swingStage.right)
         {
             target = playerRb;
             rotateOriginTransform = spoonPivot;

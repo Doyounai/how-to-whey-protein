@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class spoon : MonoBehaviour
-{
+{   
     public Transform start;
     public Transform end;
+
+    public Transform head;
+    public Transform low;
 
     public float factor = 1.0f;
 
@@ -25,8 +29,8 @@ public class spoon : MonoBehaviour
         var mid = (dir) / 2.0f + start;
         transform.position = mid;
         transform.rotation = Quaternion.FromToRotation(Vector3.up, dir);
-        //Vector3 scale = transform.localScale;
-        //scale.y = dir.magnitude * factor;
-        //transform.localScale = scale;
+
+        head.position = this.start.position;
+        low.position = this.end.position;
     }
 }
