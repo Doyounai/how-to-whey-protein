@@ -36,6 +36,9 @@ public class playerController : MonoBehaviour
         right
     }
 
+    [HideInInspector]
+    public bool isCanController = true;
+
     [Header("Player")]
     public float speed = 10f;
     public buttonInput leftMoveButton;
@@ -71,10 +74,36 @@ public class playerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!isCanController)
+            return;
+
+        checkGroundSpoon();
         movementController();
         swingController();
     }
 
+    void checkGroundSpoon()
+    {
+        if (isSwing)
+            return;
+
+        if(spoonGround.isGround)
+        {
+            if (spoonPivot.position.x < transform.position.x && getCurrentSwing(getSwingForce()) == swingStage.left)
+            {
+
+                target = playerRb;
+                rotateOriginTransform = spoonPivot;
+                isSwing = true;
+            }
+            if (spoonPivot.position.x > transform.position.x && getCurrentSwing(getSwingForce()) == swingStage.right)
+            {
+                target = playerRb;
+                rotateOriginTransform = spoonPivot;
+                isSwing = true;
+            }
+        }
+    }
     void swingController()
     {
         rotateRigidBodyAroundPointBy(target, rotateOriginTransform.position, new Vector3(0, 0, 1), -getSwingForce());
@@ -100,9 +129,9 @@ public class playerController : MonoBehaviour
     swingStage getCurrentSwing(float accX)
     {
         //float accX = Input.acceleration.x;
-        if (accX <= minSwing)
+        if (accX < minSwing)
             return swingStage.left;
-        else if (accX >= maxSwing)
+        else if (accX > maxSwing)
             return swingStage.right;
 
         return swingStage.none;
@@ -122,11 +151,12 @@ public class playerController : MonoBehaviour
 
         return (Input.acceleration.x * 10);
     }
+    #endregion
+    #region groundCheck
     public void onPlayerHitGround()
     {
-        if (!isSwing)
-            return;
-
+        //if (!isSwing)
+        //    return;
         target = spoonRb;
         rotateOriginTransform = transform;
         isSwing = false;
