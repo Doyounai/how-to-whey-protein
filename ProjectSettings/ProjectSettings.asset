@@ -154,6 +154,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.howtowheyprotein
+    Standalone: com.DefaultCompany.howtowheyprotein
   buildNumber:
     Standalone: 0
     iPhone: 0

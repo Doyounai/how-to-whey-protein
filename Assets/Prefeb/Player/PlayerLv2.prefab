@@ -27,6 +27,10 @@ PrefabInstance:
       propertyPath: m_Distance
       value: 0.08518231
       objectReference: {fileID: 0}
+    - target: {fileID: 8556454874066393714, guid: f5c13f7181ae4eb43be529c61720d86d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8556454874066393717, guid: f5c13f7181ae4eb43be529c61720d86d, type: 3}
       propertyPath: m_Distance
       value: 2.0364442
@@ -65,7 +69,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8556454875011474464, guid: f5c13f7181ae4eb43be529c61720d86d, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: PlayerLv2
       objectReference: {fileID: 0}
     - target: {fileID: 8556454875011474465, guid: f5c13f7181ae4eb43be529c61720d86d, type: 3}
       propertyPath: m_RootOrder

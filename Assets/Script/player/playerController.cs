@@ -67,7 +67,7 @@ public class playerController : MonoBehaviour
 
         playerGround = GetComponent<checkGround>();
         spoonGround = spoonPivot.GetComponent<checkGround>();
-
+        
         target = spoonRb;
         rotateOriginTransform = transform;
     }
@@ -139,15 +139,23 @@ public class playerController : MonoBehaviour
 
     float getSwingForce()
     {
-        float pcForce = 5;
+        //float pcForce = 5;
+        //
+        //if (isPc)
+        //    if (Input.GetKey(KeyCode.LeftArrow))
+        //        return -1 * pcForce;
+        //    else if (Input.GetKey(KeyCode.RightArrow))
+        //        return 1 * pcForce;
+        //    else
+        //        return 0;
 
         if (isPc)
-            if (Input.GetKey(KeyCode.LeftArrow))
-                return -1 * pcForce;
-            else if (Input.GetKey(KeyCode.RightArrow))
-                return 1 * pcForce;
-            else
-                return 0;
+        {
+            float screenCenter = Screen.width / 2;
+            float mousePosX = Input.mousePosition.x;
+
+            return (mousePosX - screenCenter) / 90;
+        }
 
         return (Input.acceleration.x * 10);
     }
