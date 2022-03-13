@@ -53,6 +53,8 @@ public class playerController : MonoBehaviour
     public float swingForce = 10f;
     public Transform spoonPivot;
     public bool isSwing = false;
+    public ParticleSystem spoonDust;
+
     Rigidbody2D playerRb;
     Rigidbody2D spoonRb;
     checkGround spoonGround;
@@ -184,20 +186,31 @@ public class playerController : MonoBehaviour
     }
     public void onSpoonHitGround()
     {
+        //left
         if(spoonPivot.position.x < transform.position.x && getCurrentSwing(getSwingForce()) == swingStage.left)
         {
             target = playerRb;
             rotateOriginTransform = spoonPivot;
             isSwing = true;
+            createSpoonDust(1);
         }
+        //right
         if(spoonPivot.position.x > transform.position.x && getCurrentSwing(getSwingForce()) == swingStage.right)
         {
             target = playerRb;
             rotateOriginTransform = spoonPivot;
             isSwing = true;
+            createSpoonDust(-1);
         }
     }
     #endregion
+
+    void createSpoonDust(int side)
+    {
+        spoonDust.gameObject.transform.localScale = new Vector3(side, 1, 1);
+        spoonDust.Play();
+    }
+
     #region rotateFunction
     public void rotateRigidBodyAroundPointBy(Rigidbody2D rb, Vector3 origin, Vector3 axis, float angle)
     {

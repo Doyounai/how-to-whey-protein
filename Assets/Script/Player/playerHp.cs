@@ -7,10 +7,8 @@ public class playerHp : MonoBehaviour
     public SpriteRenderer playerSprite;
     public Color damgeColor;
     public int hp = 3;
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Click");
         if (collision.gameObject.CompareTag("weight"))
         {
             Destroy(collision.gameObject);
