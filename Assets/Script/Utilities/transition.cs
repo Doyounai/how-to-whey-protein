@@ -5,11 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class transition : MonoBehaviour
 {
+    public static transition Instance;
+
     int sceneIndex;
     Animator animator;
 
     private void Start()
     {
+        Instance = this;
         animator = GetComponent<Animator>();
     }
 

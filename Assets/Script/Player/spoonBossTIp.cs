@@ -13,6 +13,7 @@ public class spoonBossTIp : MonoBehaviour
             if (collision.GetComponent<weight>().isReturn)
                 return;
 
+            sound.Instance.playSound("WeightHitSpoon");
             effect.hitParticle();
             collision.GetComponent<weight>().onHit(transform.position);
         }

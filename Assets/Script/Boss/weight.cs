@@ -31,6 +31,7 @@ public class weight : MonoBehaviour
         {
             if(isReturn)
             {
+                sound.Instance.playSound("WeightHitBrick");
                 effect.hitParticle();
                 Destroy(collision.gameObject);
                 Destroy(gameObject);

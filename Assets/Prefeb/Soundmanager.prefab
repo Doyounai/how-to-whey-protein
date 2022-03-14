@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2429399463500473739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1600766134131714032}
+  - component: {fileID: 5722386660041842690}
+  m_Layer: 0
+  m_Name: Soundmanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1600766134131714032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2429399463500473739}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 697.748, y: 373.6224, z: -10.806109}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5722386660041842690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2429399463500473739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630644fb078c3ed4d91b98ddcfa0cd12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundsData:
+  - name: ButtonPress
+    clip: {fileID: 8300000, guid: ca15ba5095896c141b03e92a95543d2e, type: 3}
+    volumn: 1
+    isLoop: 0
+    source: {fileID: 0}
+  - name: SpoonGrounded
+    clip: {fileID: 8300000, guid: 033e8efbd4d90534e8d62ea0be47e068, type: 3}
+    volumn: 1
+    isLoop: 0
+    source: {fileID: 0}
+  - name: WeightHitSpoon
+    clip: {fileID: 8300000, guid: 2aedf61c50c6a7947a934d8d376c0b6c, type: 3}
+    volumn: 1
+    isLoop: 0
+    source: {fileID: 0}
+  - name: WeightHitBrick
+    clip: {fileID: 8300000, guid: 227f3ecb020180b4091082f6702075bb, type: 3}
+    volumn: 0.8
+    isLoop: 0
+    source: {fileID: 0}
+  - name: PlayerHurt
+    clip: {fileID: 8300000, guid: 53bde0d0265dcd144a183277c492b5d8, type: 3}
+    volumn: 1
+    isLoop: 0
+    source: {fileID: 0}
+  - name: BossHurt
+    clip: {fileID: 8300000, guid: 09bb4f7d5791830468982b6dbb8500c2, type: 3}
+    volumn: 1
+    isLoop: 0
+    source: {fileID: 0}
+  - name: BossTheme
+    clip: {fileID: 8300000, guid: 68b46c241db7a964d82a3c573c407385, type: 3}
+    volumn: 0.3
+    isLoop: 1
+    source: {fileID: 0}
+  - name: gameplay
+    clip: {fileID: 8300000, guid: 340ca9f2851a6374bbbde0feda4209c7, type: 3}
+    volumn: 0.3
+    isLoop: 1
+    source: {fileID: 0}
+  - name: menuTheme
+    clip: {fileID: 8300000, guid: 848c9da6435ad994b8bd966a64422ed3, type: 3}
+    volumn: 1
+    isLoop: 1
+    source: {fileID: 0}
+  - name: gymMasterMeeting
+    clip: {fileID: 8300000, guid: dd1743d862934e84590634ccc1e36c1c, type: 3}
+    volumn: 1
+    isLoop: 0
+    source: {fileID: 0}
+  - name: jump
+    clip: {fileID: 8300000, guid: f65156c12ce2f5648acce542cd7804c1, type: 3}
+    volumn: 1
+    isLoop: 0
+    source: {fileID: 0}

@@ -186,6 +186,8 @@ public class playerController : MonoBehaviour
     }
     public void onSpoonHitGround()
     {
+        sound.Instance.playSound("SpoonGrounded");
+
         //left
         if(spoonPivot.position.x < transform.position.x && getCurrentSwing(getSwingForce()) == swingStage.left)
         {

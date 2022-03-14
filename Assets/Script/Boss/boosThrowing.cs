@@ -18,8 +18,16 @@ public class boosThrowing : bossBehavior
         Gizmos.DrawWireCube(player.position, new Vector3(throwRange, 2f));
     }
 
+    private void Start()
+    {
+        timeNextAction = maxCount;
+    }
+
     private void Update()
     {
+        if (player == null)
+            return;
+
         timeNextAction -= Time.deltaTime;
 
         if(timeNextAction <= 0f)

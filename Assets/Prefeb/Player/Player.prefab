@@ -371,7 +371,7 @@ MonoBehaviour:
   rightMoveButton: {fileID: 8556454874360699977}
   minSwing: 0
   maxSwing: 0
-  isPc: 1
+  isPc: 0
   swingForce: 15
   spoonPivot: {fileID: 8556454874066393721}
   isSwing: 0

@@ -37,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8556454874066393717, guid: f5c13f7181ae4eb43be529c61720d86d, type: 3}
       propertyPath: m_AutoConfigureDistance
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8556454874066393721, guid: f5c13f7181ae4eb43be529c61720d86d, type: 3}
       propertyPath: m_LocalPosition.y

@@ -10,6 +10,7 @@ public class sceneTransitionTrigger : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            sound.Instance.stopSong();
             _manager.gameObject.SetActive(true);
             _manager.playTransition();
         }
