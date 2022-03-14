@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630644fb078c3ed4d91b98ddcfa0cd12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMute: 0
   soundsData:
   - name: ButtonPress
     clip: {fileID: 8300000, guid: ca15ba5095896c141b03e92a95543d2e, type: 3}

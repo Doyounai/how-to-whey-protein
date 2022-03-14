@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Following" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYQAAAAACAIAUAAACAAAAgBQgAAQoAAABQAMiIgAAA=</HashCode>
+      <FileName>Assets\LeanTween\Examples\Scripts\Following.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PathSplinePerformance" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQEBAgAACBAAABAoAAAAAAAAAAAAAAACAACAAWCAAA=</HashCode>
+      <FileName>Assets\LeanTween\Examples\Scripts\PathSplinePerformance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PathSplines" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQEAAAAACAAIAAIAAAAAAAAAAIAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\LeanTween\Examples\Scripts\PathSplines.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="boosThrowing">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQCAAAAACIAAAQBAAAAAAAAAAAAAAABAQBAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Boss\boosThrowing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="bossBehavior">
+    <Position X="1.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAEAEAAAA=</HashCode>
+      <FileName>Assets\Script\Boss\bossBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="bossDiemanager" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAAAACAAIAAAAAAAAEAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Script\Boss\bossDiemanager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BossHp" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAEAAAAQAAAAIAAAAwAA=</HashCode>
+      <FileName>Assets\Script\Boss\BossHp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="bossMovement">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAACAAAiIAAAAAAAAQAAAAAAAAAAQAABAABAAAAAA=</HashCode>
+      <FileName>Assets\Script\Boss\bossMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weight" Collapsed="true">
+    <Position X="5.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACAhAgAAAAAAAAAAAAAAAAEAAAQAAAAAAQAAAAAA=</HashCode>
+      <FileName>Assets\Script\Boss\weight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="buttonInput" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAIAAAAAQAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Assets\Script\buttonInput\buttonInput.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="sceneTransitionManager" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAIAAAAAQAAAAAACAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Gamemanager\sceneTransitionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sceneTransitionTrigger" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Gamemanager\sceneTransitionTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="scoreManger" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAACAAAAAgAAAAAAAAAAQAAAAAAACAQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Script\Gamemanager\scoreManger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmashText" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAACAAAABAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\menu\SmashText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="checkGround" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAgAAIAAAA=</HashCode>
+      <FileName>Assets\Script\Player\checkGround.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="dieManager" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAAAACAAIAAAAAAAAAAAAAAAAAQBAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Player\dieManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="playerController">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="playerController.swingStage" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Script\Player\playerController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gAAGgIQAAiAUCGABKBAAAAAAgAAAAQAAAhgACAAAAIo=</HashCode>
+      <FileName>Assets\Script\Player\playerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="playerHp" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAQAAAgAAQAAEAAAAQAAABAAAAAABA=</HashCode>
+      <FileName>Assets\Script\Player\playerHp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="spoon" Collapsed="true">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAACgCAAQAAgAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Player\spoon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="spoonBossTIp" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Player\spoonBossTIp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonClick" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Utilities\ButtonClick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="deathZone" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Utilities\deathZone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="friend" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQhAAAGAACAACAAgAAAAAAAAAEAAAEhAAAAAIFAQACA=</HashCode>
+      <FileName>Assets\Script\Utilities\friend.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="objectLifeTime" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Utilities\objectLifeTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="playSound" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Utilities\playSound.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="songTheme" Collapsed="true">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Utilities\songTheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="soundData" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAFAAAgAAAAAAACAAA=</HashCode>
+      <FileName>Assets\Script\Utilities\sound.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="sound" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAABAAAIAACAQAAIAAAACEA=</HashCode>
+      <FileName>Assets\Script\Utilities\sound.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="spawnHitEffect" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Utilities\spawnHitEffect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="stop" Collapsed="true">
+    <Position X="7" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAIAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Script\Utilities\stop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

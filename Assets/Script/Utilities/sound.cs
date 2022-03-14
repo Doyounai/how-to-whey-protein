@@ -20,7 +20,7 @@ public class soundData
 public class sound : MonoBehaviour
 {
     public static sound Instance;
-
+    public bool isMute; 
     public soundData[] soundsData;
 
     soundData currentSong;
@@ -46,6 +46,16 @@ public class sound : MonoBehaviour
             item.source.clip = item.clip;
             item.source.volume = item.volumn;
             item.source.loop = item.isLoop;
+        }
+
+        mute(isMute);
+    }
+
+    public void mute(bool muted)
+    {
+        foreach (soundData item in soundsData)
+        {
+            item.source.mute = muted;
         }
     }
 

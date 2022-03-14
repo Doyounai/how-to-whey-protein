@@ -17390,10 +17390,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transition
       objectReference: {fileID: 0}
-    - target: {fileID: 7834165319795940252, guid: ce9d35aad00fb894897a01751c461bc1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7834165319795940253, guid: ce9d35aad00fb894897a01751c461bc1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
