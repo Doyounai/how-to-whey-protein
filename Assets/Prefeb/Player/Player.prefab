@@ -371,7 +371,7 @@ MonoBehaviour:
   rightMoveButton: {fileID: 8556454874360699977}
   minSwing: 0
   maxSwing: 0
-  isPc: 0
+  isPc: 1
   swingForce: 15
   spoonPivot: {fileID: 8556454874066393721}
   isSwing: 0
@@ -438,7 +438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8556454873505802632
 RectTransform:
   m_ObjectHideFlags: 0
